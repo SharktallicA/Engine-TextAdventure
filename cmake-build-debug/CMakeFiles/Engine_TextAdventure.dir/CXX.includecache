@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/sharktallica/Repos/Engine-TextAdventure/main.cpp
+/home/sharktallica/Repos/Engine-TextAdventure/Utility.h
 iostream
 -
+sstream
+-
+random
+-
+
+/home/sharktallica/Repos/Engine-TextAdventure/main.cpp
+Utility.h
+/home/sharktallica/Repos/Engine-TextAdventure/Utility.h
 

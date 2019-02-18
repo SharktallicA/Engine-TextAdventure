@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Utility.h">
+			<Option target="Engine_TextAdventure"/>
+		</Unit>
 		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/main.cpp">
 			<Option target="Engine_TextAdventure"/>
 		</Unit>
