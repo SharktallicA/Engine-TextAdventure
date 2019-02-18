@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Place.h">
+			<Option target="Engine_TextAdventure"/>
+		</Unit>
+		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/PlaceData.h">
+			<Option target="Engine_TextAdventure"/>
+		</Unit>
 		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Utility.h">
 			<Option target="Engine_TextAdventure"/>
 		</Unit>

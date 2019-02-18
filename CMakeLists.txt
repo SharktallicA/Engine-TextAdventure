@@ -3,4 +3,4 @@ project(Engine_TextAdventure)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Engine_TextAdventure main.cpp Utility.h)
+add_executable(Engine_TextAdventure main.cpp Utility.h Place.h PlaceData.h)
