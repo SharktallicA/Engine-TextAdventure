@@ -84,13 +84,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Place.h">
+		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Engine/GameLoader.h">
 			<Option target="Engine_TextAdventure"/>
 		</Unit>
-		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/PlaceData.h">
+		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Misc/Utility.h">
 			<Option target="Engine_TextAdventure"/>
 		</Unit>
-		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Utility.h">
+		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Structures/Enemy.h">
+			<Option target="Engine_TextAdventure"/>
+		</Unit>
+		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Structures/Game.h">
+			<Option target="Engine_TextAdventure"/>
+		</Unit>
+		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Structures/Map.h">
+			<Option target="Engine_TextAdventure"/>
+		</Unit>
+		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Structures/Place.h">
+			<Option target="Engine_TextAdventure"/>
+		</Unit>
+		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Structures/PlaceData.h">
 			<Option target="Engine_TextAdventure"/>
 		</Unit>
 		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/main.cpp">

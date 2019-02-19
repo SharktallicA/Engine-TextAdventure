@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<Game name="United Earth">
+
+    <Details>
+
+        <TravelMethod>Warp</TravelMethod>
+        <DistanceUnity>Light Year</DistanceUnity>
+        <EnableMapView>true</EnableMapView>
+        <StartArea>Sol</StartArea>
+
+    </Details>
+
+    <Map>
+
+        <Area name="Sol">
+
+            <AreaDescription>Human home system</AreaDescription>
+
+            <NorthName>Alpha Centauri</NorthName>
+            <NorthDistance>4</NorthDistance>
+
+        </Area>
+
+        <Area name="Alpha Centauri">
+
+            <AreaDescription>Human's largest colony system</AreaDescription>
+
+            <SouthName>Sol</SouthName>
+            <SouthDistance>4</SouthDistance>
+
+        </Area>
+
+    </Map>
+
+    <Enemies>
+
+        <Enemy name="Romulan Chowder-class destroyer">
+
+            <EnemyAttack>6</EnemyAttack>
+            <EnemyDefence>1</EnemyDefence>
+
+        </Enemy>
+
+        <Enemy name="Romulan Cracker-class frigate">
+
+            <EnemyAttack>5</EnemyAttack>
+            <EnemyDefence>5</EnemyDefence>
+
+        </Enemy>
+
+        <Enemy name="Romulan Clavical-class cruiser">
+
+            <EnemyAttack>6</EnemyAttack>
+            <EnemyDefence>7</EnemyDefence>
+
+        </Enemy>
+
+        <Enemy name="Romulan Capsize-class battlecruiser">
+
+            <EnemyAttack>8</EnemyAttack>
+            <EnemyDefence>6</EnemyDefence>
+
+        </Enemy>
+
+        <Enemy name="Romulan Cabbage-class battleship">
+
+            <EnemyAttack>10</EnemyAttack>
+            <EnemyDefence>10</EnemyDefence>
+
+        </Enemy>
+
+    </Enemies>
+
+</Game>
