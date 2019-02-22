@@ -9,6 +9,8 @@
 /home/sharktallica/Repos/Engine-TextAdventure/Engine/GameLoader.h
 ../Structures/Game.h
 /home/sharktallica/Repos/Engine-TextAdventure/Structures/Game.h
+../Structures/Place.h
+/home/sharktallica/Repos/Engine-TextAdventure/Structures/Place.h
 ../pugixml/pugixml.hpp
 /home/sharktallica/Repos/Engine-TextAdventure/pugixml/pugixml.hpp
 
