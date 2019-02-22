@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Engine_TextAdventure.dir/build.make CMakeFiles/Engine_TextAdventure.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+pugixml/pugixml.o: pugixml/pugixml.cpp.o
+
+.PHONY : pugixml/pugixml.o
+
+# target to build an object file
+pugixml/pugixml.cpp.o:
+	$(MAKE) -f CMakeFiles/Engine_TextAdventure.dir/build.make CMakeFiles/Engine_TextAdventure.dir/pugixml/pugixml.cpp.o
+.PHONY : pugixml/pugixml.cpp.o
+
+pugixml/pugixml.i: pugixml/pugixml.cpp.i
+
+.PHONY : pugixml/pugixml.i
+
+# target to preprocess a source file
+pugixml/pugixml.cpp.i:
+	$(MAKE) -f CMakeFiles/Engine_TextAdventure.dir/build.make CMakeFiles/Engine_TextAdventure.dir/pugixml/pugixml.cpp.i
+.PHONY : pugixml/pugixml.cpp.i
+
+pugixml/pugixml.s: pugixml/pugixml.cpp.s
+
+.PHONY : pugixml/pugixml.s
+
+# target to generate assembly for a file
+pugixml/pugixml.cpp.s:
+	$(MAKE) -f CMakeFiles/Engine_TextAdventure.dir/build.make CMakeFiles/Engine_TextAdventure.dir/pugixml/pugixml.cpp.s
+.PHONY : pugixml/pugixml.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pugixml/pugixml.o"
+	@echo "... pugixml/pugixml.i"
+	@echo "... pugixml/pugixml.s"
 .PHONY : help
 
 

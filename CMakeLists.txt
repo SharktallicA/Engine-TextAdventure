@@ -3,4 +3,4 @@ project(Engine_TextAdventure)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Engine_TextAdventure main.cpp Misc/Utility.h Structures/Place.h Structures/PlaceData.h Engine/GameLoader.h Structures/Game.h Structures/Map.h Structures/Enemy.h)
+add_executable(Engine_TextAdventure main.cpp Misc/Utility.h Structures/Place.h Structures/PlaceData.h Engine/GameLoader.h Structures/Game.h pugixml/pugixml.hpp pugixml/pugixml.cpp)

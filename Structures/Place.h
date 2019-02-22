@@ -22,7 +22,7 @@ private:
     string name = "";
 
     //Linked-list hardpoints (order: N, E, S, W)
-    PlaceData*[4] adjs;
+    PlaceData* adjs[4];
 
 public:
     Place(string nName) { name = nName; }

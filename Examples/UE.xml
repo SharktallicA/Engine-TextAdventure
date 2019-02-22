@@ -5,7 +5,7 @@
     <Details>
 
         <TravelMethod>Warp</TravelMethod>
-        <DistanceUnity>Light Year</DistanceUnity>
+        <DistanceUnit>Light Year</DistanceUnit>
         <EnableMapView>true</EnableMapView>
         <StartArea>Sol</StartArea>
 

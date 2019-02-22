@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sharktallica/Repos/Engine-TextAdventure/main.cpp" "/home/sharktallica/Repos/Engine-TextAdventure/cmake-build-debug/CMakeFiles/Engine_TextAdventure.dir/main.cpp.o"
+  "/home/sharktallica/Repos/Engine-TextAdventure/pugixml/pugixml.cpp" "/home/sharktallica/Repos/Engine-TextAdventure/cmake-build-debug/CMakeFiles/Engine_TextAdventure.dir/pugixml/pugixml.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

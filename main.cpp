@@ -5,14 +5,18 @@
 */
 
 #include "Misc/Utility.h"
+#include "Engine/GameLoader.h"
 
 using namespace std;
 
 int main(void)
 {
-    cout << "Testing rand..." << endl;
-    for (int i = 0; i < 100; i++)
-        cout << i + 1 << ": " << Utility::rand64(0, 100) << endl;
-
+    GameLoader* ldr;
+    try
+    {
+        ldr = new GameLoader("../Examples/UE.xml");
+    }
+    catch(char* msg) { cout << msg; }
+    Utility::pause();
     return 0;
 }

@@ -6,7 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/sharktallica/Repos/Engine-TextAdventure/Utility.h
+/home/sharktallica/Repos/Engine-TextAdventure/Engine/GameLoader.h
+../Structures/Game.h
+/home/sharktallica/Repos/Engine-TextAdventure/Structures/Game.h
+../pugixml/pugixml.hpp
+/home/sharktallica/Repos/Engine-TextAdventure/pugixml/pugixml.hpp
+
+/home/sharktallica/Repos/Engine-TextAdventure/Misc/Utility.h
 iostream
 -
 sstream
@@ -14,7 +20,39 @@ sstream
 random
 -
 
+/home/sharktallica/Repos/Engine-TextAdventure/Structures/Game.h
+vector
+-
+Place.h
+/home/sharktallica/Repos/Engine-TextAdventure/Structures/Place.h
+
+/home/sharktallica/Repos/Engine-TextAdventure/Structures/Place.h
+string
+-
+PlaceData.h
+/home/sharktallica/Repos/Engine-TextAdventure/Structures/PlaceData.h
+
+/home/sharktallica/Repos/Engine-TextAdventure/Structures/PlaceData.h
+
 /home/sharktallica/Repos/Engine-TextAdventure/main.cpp
-Utility.h
-/home/sharktallica/Repos/Engine-TextAdventure/Utility.h
+Misc/Utility.h
+/home/sharktallica/Repos/Engine-TextAdventure/Misc/Utility.h
+Engine/GameLoader.h
+/home/sharktallica/Repos/Engine-TextAdventure/Engine/GameLoader.h
+
+/home/sharktallica/Repos/Engine-TextAdventure/pugixml/pugiconfig.hpp
+
+/home/sharktallica/Repos/Engine-TextAdventure/pugixml/pugixml.hpp
+pugiconfig.hpp
+/home/sharktallica/Repos/Engine-TextAdventure/pugixml/pugiconfig.hpp
+stddef.h
+-
+exception
+-
+iterator
+-
+iosfwd
+-
+string
+-
 
