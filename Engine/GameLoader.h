@@ -47,22 +47,22 @@ private:
             //All individual places
             vector<Place*> places;
             //Four possible neighbour names for each place
-            vector<string[4]> adjacentNames;
-            //Four possible neighbour travel dsitances for each place
-            vector<int[4]> adjacentCosts;
+            vector<vector<string>> adjacentNames;
+            //Four possible neighbour travel distances for each place
+            vector<vector<int>> adjacentCosts;
 
             for (xml_node area = doc.child("Game").child("Area"); area; area = area.next_sibling("Area"))
             {
                 places.push_back(new Place(area.attribute("name").as_string()));
 
-                string adjName[4];
+                vector<string> adjName(4);
                 adjName[0] = area.child("NorthName").child_value();
                 adjName[1] = area.child("EastName").child_value();
                 adjName[2] = area.child("SouthName").child_value();
                 adjName[3]  = area.child("WestName").child_value();
                 adjacentNames.push_back(adjName);
 
-                int adjDist[4];
+                vector<int> adjDist(4);
                 adjDist[0] = (int)area.child("NorthDistance").child_value()[0];
                 adjDist[1] = (int)area.child("EastDistance").child_value()[0];
                 adjDist[2] = (int)area.child("SouthDistance").child_value()[0];
