@@ -1,5 +1,5 @@
 /*
-    Game file XML parser class
+    Game XML file parser class
     Khalid Ali 2019
     http://khalidali.co.uk
 */
@@ -7,16 +7,19 @@
 #ifndef ENGINE_TEXTADVENTURE_GAMELOADER_H
 #define ENGINE_TEXTADVENTURE_GAMELOADER_H
 
-#include "../Structures/Game.h"
-#include "../Structures/Place.h"
-#include "../pugixml/pugixml.hpp"
+#include "Structures/Game.h"
+#include "Structures/Place.h"
+#include "pugixml/pugixml.hpp"
 
 using namespace pugi;
 
-//Inteprets game file XML into a workable format
-class GameLoader
+//Handles game XML file handling operations
+class GameIO
 {
 private:
+    //
+    Game* game;
+
     //Loaded game XML file
     xml_document doc;
 
@@ -53,7 +56,11 @@ private:
 
             for (xml_node area = doc.child("Game").child("Area"); area; area = area.next_sibling("Area"))
             {
-                places.push_back(new Place(area.attribute("name").as_string()));
+                Place* loaded = new Place(area.attribute("name").as_string());
+                places.push_back(loaded);
+
+                if (loaded->GetName() == doc.child("Game").child("Details").child("StartArea").child_value())
+                    game->start = loaded;
 
                 vector<string> adjName(4);
                 adjName[0] = area.child("NorthName").child_value();
@@ -102,10 +109,11 @@ private:
     }
 
 public:
-    //
-    Game* game;
+    GameIO(void) {}
 
-    GameLoader(string loc)
+    //Loads and interprets given game file into workable
+    //format
+    Game* LoadGame(string loc)
     {
         //Attempt XML document parse to see if we can proceed
         xml_parse_result rst = doc.load_file(loc.c_str());
@@ -114,7 +122,11 @@ public:
         //Attempt load data from XML document
         loadGameData();
         loadMapData();
+
+        return game;
     }
+
+    bool CreateGame(void) { return false; }
 };
 
 #endif //ENGINE_TEXTADVENTURE_GAMELOADER_H

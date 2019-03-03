@@ -4,17 +4,19 @@
     http://khalidali.co.uk
 */
 
-#include "Misc/Utility.h"
-#include "Engine/GameLoader.h"
+#include "Utility.h"
+#include "GameIO.h"
 
 using namespace std;
 
 int main(void)
 {
-    GameLoader* ldr;
     try
     {
-        ldr = new GameLoader("../Examples/UE.xml");
+        GameIO ldr;
+        Game* game = ldr.LoadGame("../Examples/UE.xml");
+
+        cout << game->start->GetName() << endl;
     }
     catch(char* msg) { cout << msg; }
     Utility::pause();

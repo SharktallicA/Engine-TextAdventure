@@ -6,21 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/sharktallica/Repos/Engine-TextAdventure/Engine/GameLoader.h
-../Structures/Game.h
+/home/sharktallica/Repos/Engine-TextAdventure/GameIO.h
+Structures/Game.h
 /home/sharktallica/Repos/Engine-TextAdventure/Structures/Game.h
-../Structures/Place.h
+Structures/Place.h
 /home/sharktallica/Repos/Engine-TextAdventure/Structures/Place.h
-../pugixml/pugixml.hpp
+pugixml/pugixml.hpp
 /home/sharktallica/Repos/Engine-TextAdventure/pugixml/pugixml.hpp
-
-/home/sharktallica/Repos/Engine-TextAdventure/Misc/Utility.h
-iostream
--
-sstream
--
-random
--
 
 /home/sharktallica/Repos/Engine-TextAdventure/Structures/Game.h
 vector
@@ -36,11 +28,19 @@ PlaceData.h
 
 /home/sharktallica/Repos/Engine-TextAdventure/Structures/PlaceData.h
 
+/home/sharktallica/Repos/Engine-TextAdventure/Utility.h
+iostream
+-
+sstream
+-
+random
+-
+
 /home/sharktallica/Repos/Engine-TextAdventure/main.cpp
-Misc/Utility.h
-/home/sharktallica/Repos/Engine-TextAdventure/Misc/Utility.h
-Engine/GameLoader.h
-/home/sharktallica/Repos/Engine-TextAdventure/Engine/GameLoader.h
+Utility.h
+/home/sharktallica/Repos/Engine-TextAdventure/Utility.h
+GameIO.h
+/home/sharktallica/Repos/Engine-TextAdventure/GameIO.h
 
 /home/sharktallica/Repos/Engine-TextAdventure/pugixml/pugiconfig.hpp
 
