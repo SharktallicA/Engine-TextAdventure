@@ -23,6 +23,8 @@ Place.h
 /home/sharktallica/Repos/Engine-TextAdventure/Structures/Place.h
 string
 -
+vector
+-
 PlaceData.h
 /home/sharktallica/Repos/Engine-TextAdventure/Structures/PlaceData.h
 

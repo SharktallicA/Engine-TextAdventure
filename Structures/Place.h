@@ -7,7 +7,8 @@
 #ifndef ENGINE_TEXTADVENTURE_PLACE_H
 #define ENGINE_TEXTADVENTURE_PLACE_H
 
-#include<string>
+#include <string>
+#include <vector>
 #include "PlaceData.h"
 
 using namespace std;
@@ -22,11 +23,14 @@ private:
     string name = "";
 
     //Linked-list hardpoints (order: N, E, S, W)
-    PlaceData* adjs[4];
+    vector<PlaceData*> adjs;
 
 public:
-    Place(string nName) { name = nName; }
-    ~Place() { for (int i = 0; i < 4; i++) delete adjs[i]; }
+    Place(string nName)
+    {
+        adjs = vector<PlaceData*>(4);
+        name = nName;
+    }
 
     //Defines the layout of places adjacent to this place
     void MapPlaces(PlaceData* n, PlaceData* e, PlaceData* s, PlaceData* w = nullptr)

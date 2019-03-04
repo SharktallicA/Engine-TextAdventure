@@ -54,13 +54,9 @@ private:
             //Four possible neighbour travel distances for each place
             vector<vector<int>> adjacentCosts;
 
-            for (xml_node area = doc.child("Game").child("Area"); area; area = area.next_sibling("Area"))
+            for (xml_node area = doc.child("Game").child("Map").child("Area"); area; area = area.next_sibling("Area"))
             {
-                Place* loaded = new Place(area.attribute("name").as_string());
-                places.push_back(loaded);
-
-                if (loaded->GetName() == doc.child("Game").child("Details").child("StartArea").child_value())
-                    game->start = loaded;
+                places.push_back(new Place(area.attribute("name").as_string()));
 
                 vector<string> adjName(4);
                 adjName[0] = area.child("NorthName").child_value();
@@ -84,19 +80,33 @@ private:
 
             for (int i = 0; i < places.size(); i++)
             {
-                vector<PlaceData*> relatives;
+                vector<PlaceData*> relatives(4);
 
                 for (int j = 0; j < 4; j++)
                 {
                     if (adjacentNames[i][j] != "")
                     {
-                        for (Place* place : places) if (place->GetName() == adjacentNames[i][j])
-                                relatives.push_back(new PlaceData(place, adjacentCosts[i][j]));
+                        for (Place* place : places)
+                            if (place->GetName() == adjacentNames[i][j])
+                                relatives[j] = new PlaceData(place, adjacentCosts[i][j]);
                     }
-                    else relatives.push_back(new PlaceData(nullptr, 0));
+                    else relatives[j] = new PlaceData(nullptr, 0);
                 }
 
                 places[i]->MapPlaces(relatives[0], relatives[1], relatives[2], relatives[3]);
+            }
+
+            // 3) Find the requested starting place and set game->start as it.
+            // This will be the rest of the program's only start reference to
+            // the linked list created.
+
+            for (int i = 0; i < places.size(); i++)
+            {
+                if (places[i]->GetName() == doc.child("Game").child("Details").child("StartArea").child_value())
+                {
+                    game->start = places[i];
+                    break;
+                }
             }
         }
         catch(...) { throw "FATAL ERROR: cannot load <Map> from game file!"; }

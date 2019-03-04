@@ -21,7 +21,6 @@ public:
         place = nPlace;
         cost = nCost;
     }
-    ~PlaceData(void) { delete place; }
 };
 
 #endif //ENGINE_TEXTADVENTURE_PLACECHANGEDATA_H

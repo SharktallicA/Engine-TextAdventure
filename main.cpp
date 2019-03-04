@@ -15,8 +15,14 @@ int main(void)
     {
         GameIO ldr;
         Game* game = ldr.LoadGame("../Examples/UE.xml");
+        Place* current = game->start;
 
-        cout << game->start->GetName() << endl;
+        if (!current)
+            cout << "Not here!\n";
+        else
+        {
+            cout << current->GetName() << " here!\n";
+        }
     }
     catch(char* msg) { cout << msg; }
     Utility::pause();
