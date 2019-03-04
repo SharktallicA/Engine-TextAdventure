@@ -5,7 +5,7 @@
 */
 
 #include "Utility.h"
-#include "GameIO.h"
+#include "Menu.h"
 
 using namespace std;
 
@@ -13,18 +13,11 @@ int main(void)
 {
     try
     {
-        GameIO ldr;
-        Game* game = ldr.LoadGame("../Examples/UE.xml");
-        Place* current = game->start;
-
-        if (!current)
-            cout << "Not here!\n";
-        else
-        {
-            cout << current->GetName() << " here!\n";
-        }
+        Menu mnu;
+        while (mnu.Run());
     }
     catch(char* msg) { cout << msg; }
+
     Utility::pause();
     return 0;
 }

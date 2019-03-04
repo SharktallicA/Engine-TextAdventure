@@ -14,6 +14,10 @@ Structures/Place.h
 pugixml/pugixml.hpp
 /home/sharktallica/Repos/Engine-TextAdventure/pugixml/pugixml.hpp
 
+/home/sharktallica/Repos/Engine-TextAdventure/Menu.h
+GameIO.h
+/home/sharktallica/Repos/Engine-TextAdventure/GameIO.h
+
 /home/sharktallica/Repos/Engine-TextAdventure/Structures/Game.h
 vector
 -
@@ -41,8 +45,8 @@ random
 /home/sharktallica/Repos/Engine-TextAdventure/main.cpp
 Utility.h
 /home/sharktallica/Repos/Engine-TextAdventure/Utility.h
-GameIO.h
-/home/sharktallica/Repos/Engine-TextAdventure/GameIO.h
+Menu.h
+/home/sharktallica/Repos/Engine-TextAdventure/Menu.h
 
 /home/sharktallica/Repos/Engine-TextAdventure/pugixml/pugiconfig.hpp
 

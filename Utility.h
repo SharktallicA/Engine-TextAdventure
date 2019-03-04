@@ -137,7 +137,7 @@ public:
     }
 
     //Clears the screen
-    static void clearScreen(void)
+    static void clear(void)
     {
 #ifdef WINDOWS
         system("cls");
@@ -147,7 +147,7 @@ public:
     }
 
     //Pauses program for user input - system("pause") replacement
-    static char pause(string msg = "Press any key to continue...")
+    static char pause(string msg = "Press any key and return to continue...")
     {
         cout << msg;
         char in = getchar();

@@ -87,6 +87,9 @@
 		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/GameIO.h">
 			<Option target="Engine_TextAdventure"/>
 		</Unit>
+		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Menu.h">
+			<Option target="Engine_TextAdventure"/>
+		</Unit>
 		<Unit filename="/home/sharktallica/Repos/Engine-TextAdventure/Structures/Game.h">
 			<Option target="Engine_TextAdventure"/>
 		</Unit>
