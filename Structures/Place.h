@@ -1,5 +1,5 @@
 /*
-    Location representation class
+    Location data encapsulation
     Khalid Ali 2019
     http://khalidali.co.uk
 */
@@ -16,13 +16,14 @@ using namespace std;
 //Possible directions of travel
 enum Direction { North = 0, East = 1, South = 2, West = 3 };
 
-//Game area location/representation
+//Encapsulates data needed to define a place and its position on the map
 class Place
 {
 private:
+    //Place's name (duh)
     string name = "";
 
-    //Linked-list hardpoints (order: N, E, S, W)
+    //Linked-list map hardpoints (order: N, E, S, W)
     vector<PlaceData*> adjs;
 
 public:

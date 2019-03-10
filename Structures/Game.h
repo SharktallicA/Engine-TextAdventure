@@ -1,5 +1,5 @@
 /*
-    Loaded game data
+    Loaded game data encapsulation
     Khalid Ali 2019
     http://khalidali.co.uk
 */
@@ -12,11 +12,11 @@
 
 using namespace std;
 
-//Encapsulates data loaded from game XML file
+//Encapsulates data loaded from XML game file
 class Game
 {
 public:
-    ~Game(void) { delete start; }
+    ~Game(void) { delete current; }
 
     //Name of game
     string gameName;
@@ -25,8 +25,10 @@ public:
     //Name of map distance unity
     string distanceUnit;
 
-    //Pointer to map via starting area
-    Place* start;
+    //Reference to the current area of the map:
+    //When Game is initialised, this serves as the map starting point
+    //When playing, it becomes the current location reference
+    Place* current;
 
     //Array of possible enemies that the game can use
     //vector<Enemy> possibleEnemies;

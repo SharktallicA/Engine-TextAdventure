@@ -1,5 +1,5 @@
 /*
-    Place data transport class
+    Place data transportation
     Khalid Ali 2019
     http://khalidali.co.uk
 */
@@ -9,7 +9,8 @@
 
 class Place;
 
-//Allows storage and transportation of place object and its cost of travel
+//Allows a given Place at its relative travel-to cost
+//to be encapsulated and transported
 class PlaceData
 {
 public:

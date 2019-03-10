@@ -1,5 +1,5 @@
 /*
-    Game XML file parser class
+    XML game file parser
     Khalid Ali 2019
     http://khalidali.co.uk
 */
@@ -13,14 +13,14 @@
 
 using namespace pugi;
 
-//Handles game XML file handling operations
+//Handles operating with XML game files
 class GameIO
 {
 private:
-    //
+    //The game to be constructed via loading
     Game* game;
 
-    //Loaded game XML file
+    //Loaded XML game file
     xml_document doc;
 
     //Attempts to load game <Details> data from game file
@@ -112,7 +112,7 @@ private:
         catch(...) { throw "FATAL ERROR: cannot load <Map> from game file!"; }
     }
 
-    //
+    //TO BE IMPLEMENTED
     void loadEnemyData(void)
     {
 
@@ -136,6 +136,7 @@ public:
         return game;
     }
 
+    //TO BE IMPLEMENTED
     bool CreateGame(void) { return false; }
 };
 

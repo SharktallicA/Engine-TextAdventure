@@ -149,10 +149,12 @@ public:
     //Pauses program for user input - system("pause") replacement
     static char pause(string msg = "Press any key and return to continue...")
     {
+        system ("/bin/stty raw");
         cout << msg;
         char in = getchar();
         cout << endl;
         cin.ignore();
+        system("/bin/stty cooked");
         return in;
     }
 };
