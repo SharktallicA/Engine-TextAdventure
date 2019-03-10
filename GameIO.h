@@ -90,7 +90,7 @@ private:
                             if (place->GetName() == adjacentNames[i][j])
                                 relatives[j] = new PlaceData(place, adjacentCosts[i][j]);
                     }
-                    else relatives[j] = new PlaceData(nullptr, 0);
+                    else relatives[j] = nullptr;
                 }
 
                 places[i]->MapPlaces(relatives[0], relatives[1], relatives[2], relatives[3]);

@@ -33,7 +33,7 @@ public:
     }
 
     //Defines the layout of places adjacent to this place
-    void MapPlaces(PlaceData* n, PlaceData* e, PlaceData* s, PlaceData* w = nullptr)
+    void MapPlaces(PlaceData* n, PlaceData* e, PlaceData* s, PlaceData* w)
     {
         //Remapping places should not be allowed
         if (adjs[0] || adjs[1] || adjs[2] || adjs[3])

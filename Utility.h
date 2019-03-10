@@ -152,6 +152,7 @@ public:
         cout << msg;
         char in = getchar();
         cout << endl;
+        cin.ignore();
         return in;
     }
 };
